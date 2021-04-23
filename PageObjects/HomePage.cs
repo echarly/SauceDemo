@@ -28,6 +28,16 @@ namespace SauceDemo.PageObjects
 
         //Shopping Cart
         public By ShoppingCartButton = By.XPath("//a[@class='shopping_cart_link']");
+        public By InventoryItemName = By.XPath("//div[@class='inventory_item_name']");
+
+        public By CheckOutButton = By.Id("checkout");
+        public By CheckOut_FirstName = By.Id("first-name");
+        public By CheckOut_LastName = By.Id("last-name");
+        public By CheckOut_ZipCode = By.Id("postal-code");
+        public By CheckOut_ContinueButton = By.Id("continue");
+
+        // Titles
+        public string Itemtitle = "Sauce Labs Onesie";
 
         BasePage basePage = new BasePage();
 
@@ -39,6 +49,27 @@ namespace SauceDemo.PageObjects
             Click(SauceLabsOnesies);
             Click(SauceLabsTShirtRed);
             */
+
+            return this;
+        }
+
+        public HomePage OpenShoppingCart()
+        {
+            Click(ShoppingCartButton);
+
+            return this;
+        }
+
+        public HomePage CheckOutProduct()
+        {
+
+            Click(CheckOutButton);
+
+            EnterText(CheckOut_FirstName, "FirstName");
+            EnterText(CheckOut_LastName, "LastName");
+            EnterText(CheckOut_ZipCode, "12345");
+
+            Click(CheckOut_ContinueButton);
 
             return this;
         }
