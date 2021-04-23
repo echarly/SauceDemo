@@ -60,12 +60,6 @@ namespace SauceDemo
             //-----Impicit
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
-            //Explicit
-            /*
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
-            wait.Until(drv => drv.FindElement(element));
-            */
-
             return this;
         }
 
@@ -92,25 +86,6 @@ namespace SauceDemo
             Console.WriteLine("Element Displayed: " + display);
 
             return display;
-        }
-
-        public BasePage NavigateToElement(By element)
-        {
-            /*
-            var el = driver.FindElement(element);
-            Actions actions = new Actions(driver);
-            actions.MoveToElement(el);
-            */
-
-/*          IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
-            js.ExecuteScript("arguments[0].scrollIntoView();", element);
-            */
-
-            //to perform Scroll on application using Selenium
-            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
-            js.ExecuteScript("window.scrollBy(0,-550)", "");
-
-            return this;
         }
 
         public void CloseDriver()
