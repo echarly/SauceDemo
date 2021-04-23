@@ -58,7 +58,7 @@ namespace SauceDemo
         public BasePage WaitTime(By element)
         {
             //-----Impicit
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
 
             return this;
         }

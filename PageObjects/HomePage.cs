@@ -17,7 +17,7 @@ namespace SauceDemo.PageObjects
         // Add - Shopping Cart Items
         public By SauceLabsBackPack = By.Id("add-to-cart-sauce-labs-backpack");
         public By SauceLabsBikeLight = By.Id("add-to-cart-sauce-labs-bike-light");
-        public By SauceLabsOnesies = By.Id("add-to-cart-sauce-labs-onesie");
+        public By SauceLabsOnesies = By.Name("add-to-cart-sauce-labs-onesie");
         public By SauceLabsTShirtRed = By.Id("add-to-cart-test.allthethings()-t-shirt-(red)");
 
         // Remove - Shopping Cart Items
@@ -46,6 +46,7 @@ namespace SauceDemo.PageObjects
         public HomePage AddToShoppingCart(By element)
         {
             Click(element);
+
             /*
             Click(SauceLabsBikeLight);
             Click(SauceLabsOnesies);
@@ -66,6 +67,8 @@ namespace SauceDemo.PageObjects
         {
 
             Click(CheckOutButton);
+
+            basePage.WaitTime(CheckOut_FirstName);
 
             EnterText(CheckOut_FirstName, "FirstName");
             EnterText(CheckOut_LastName, "LastName");
