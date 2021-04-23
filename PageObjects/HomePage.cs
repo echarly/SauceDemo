@@ -36,6 +36,8 @@ namespace SauceDemo.PageObjects
         public By CheckOut_ZipCode = By.Id("postal-code");
         public By CheckOut_ContinueButton = By.Id("continue");
 
+        public By PaymentInformation = By.XPath("//div[@class='summary_value_label']");
+
         // Titles
         public string Itemtitle = "Sauce Labs Onesie";
 
