@@ -7,9 +7,10 @@ C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\bin\Debug\SauceDemo.d
 C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\bin\Debug\SauceDemo.pdb
 C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\bin\Debug\nunit.framework.dll
 C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\bin\Debug\WebDriver.dll
+C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\bin\Debug\WebDriver.Support.dll
 C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\bin\Debug\nunit.framework.xml
 C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\bin\Debug\WebDriver.xml
-C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\obj\Debug\SauceDemo.csprojAssemblyReference.cache
+C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\bin\Debug\WebDriver.Support.xml
 C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\obj\Debug\SauceDemo.csproj.CoreCompileInputs.cache
 C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\obj\Debug\SauceDemo.csproj.CopyComplete
 C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\obj\Debug\SauceDemo.dll

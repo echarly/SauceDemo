@@ -11,7 +11,8 @@ namespace SauceDemo.PageObjects
     {
         public By BurgerMenuButton = By.Id("react-burger-menu-btn");
         public By LogOutButton = By.Id("logout_sidebar_link");
-        public By productSortContainer = By.XPath("//select[@class='product_sort_container']");
+        //public By productSortContainer = By.XPath(("//select[@class='product_sort_container']"));
+        public IWebElement productSortContainer = null;
         public By ProductsTitle = By.XPath("//span[@class='title']");
 
         // Add - Shopping Cart Items
@@ -46,12 +47,6 @@ namespace SauceDemo.PageObjects
         public HomePage AddToShoppingCart(By element)
         {
             Click(element);
-
-            /*
-            Click(SauceLabsBikeLight);
-            Click(SauceLabsOnesies);
-            Click(SauceLabsTShirtRed);
-            */
 
             return this;
         }
@@ -91,8 +86,9 @@ namespace SauceDemo.PageObjects
         public HomePage SelectDropDown(SortContainer sort)
         {
             string option = null;
+            productSortContainer = driver.FindElement(By.XPath("//select[@class='product_sort_container']"));
 
-            switch(sort)
+            switch (sort)
             {
                 case SortContainer.AtoZ:
                     option = "Name (A to Z)";
