@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace SauceDemo
 {
     public class BasePage
@@ -72,16 +73,6 @@ namespace SauceDemo
             return text;
         }
 
-        public BasePage SelectDropDown(By element, string option)
-        {
-            driver.FindElement(element).Click();
-            driver.FindElement(element).SendKeys(option);
-            driver.FindElement(element).SendKeys(Keys.Enter);
-            Console.WriteLine("Option selected: " + option);
-
-            return this;
-        }
-
         public bool ElementDisplayed(By element)
         {
             bool display = driver.FindElement(element).Displayed;
@@ -93,6 +84,17 @@ namespace SauceDemo
         public void CloseDriver()
         {
             driver.Quit();
+        }
+
+        public BasePage SelectDropDown(By element, string option)
+        {
+
+            driver.FindElement(element).Click();
+            driver.FindElement(element).SendKeys(option);
+            driver.FindElement(element).Click();
+            Console.WriteLine("Option selected: " + option);
+
+            return this;
         }
         #endregion
     }
