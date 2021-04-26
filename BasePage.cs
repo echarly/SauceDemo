@@ -86,13 +86,20 @@ namespace SauceDemo
             driver.Quit();
         }
 
-        public BasePage SelectDropDown(By element, string option)
+        public BasePage SelectDropDown(IWebElement element, string option)
         {
 
-            driver.FindElement(element).Click();
+            SelectElement selectElement;
+
+            //create select element object, and select
+            selectElement = new SelectElement(element);
+            selectElement.SelectByText(option);
+
+
+            /*driver.FindElement(element).Click();
             driver.FindElement(element).SendKeys(option);
             driver.FindElement(element).Click();
-            Console.WriteLine("Option selected: " + option);
+            Console.WriteLine("Option selected: " + option);*/
 
             return this;
         }
