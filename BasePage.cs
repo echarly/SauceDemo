@@ -94,6 +94,7 @@ namespace SauceDemo
             //create select element object, and select
             selectElement = new SelectElement(element);
             selectElement.SelectByText(option);
+            Console.WriteLine("Dropdown Selected: " + option);
 
             return this;
         }
