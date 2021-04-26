@@ -15,3 +15,4 @@ C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\obj\Debug\SauceDemo.c
 C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\obj\Debug\SauceDemo.csproj.CopyComplete
 C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\obj\Debug\SauceDemo.dll
 C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\obj\Debug\SauceDemo.pdb
+C:\Users\carlos.hernandez\source\repos\SauceDemo\SauceDemo\obj\Debug\SauceDemo.csprojAssemblyReference.cache
