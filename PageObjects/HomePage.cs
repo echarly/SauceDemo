@@ -17,7 +17,7 @@ namespace SauceDemo.PageObjects
         // Add - Shopping Cart Items
         public By SauceLabsBackPack = By.Id("add-to-cart-sauce-labs-backpack");
         public By SauceLabsBikeLight = By.Id("add-to-cart-sauce-labs-bike-light");
-        public By SauceLabsOnesies = By.Name("add-to-cart-sauce-labs-onesie");
+        public By SauceLabsOnesies = By.XPath("//button[@data-test='add-to-cart-sauce-labs-onesie']");
         public By SauceLabsTShirtRed = By.Id("add-to-cart-test.allthethings()-t-shirt-(red)");
 
         // Remove - Shopping Cart Items
@@ -88,7 +88,7 @@ namespace SauceDemo.PageObjects
             return this;
         }
 
-        public string SelectDropDown(SortContainer sort)
+        public HomePage SelectDropDown(SortContainer sort)
         {
             string option = null;
 
@@ -111,7 +111,9 @@ namespace SauceDemo.PageObjects
                     break;
             }
 
-            return option;
+            basePage.SelectDropDown(productSortContainer, option);
+
+            return this;
         }
     }
 
