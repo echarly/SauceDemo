@@ -95,12 +95,6 @@ namespace SauceDemo
             selectElement = new SelectElement(element);
             selectElement.SelectByText(option);
 
-
-            /*driver.FindElement(element).Click();
-            driver.FindElement(element).SendKeys(option);
-            driver.FindElement(element).Click();
-            Console.WriteLine("Option selected: " + option);*/
-
             return this;
         }
         #endregion
