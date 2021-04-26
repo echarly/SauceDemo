@@ -74,7 +74,9 @@ namespace SauceDemo
 
         public BasePage SelectDropDown(By element, string option)
         {
+            driver.FindElement(element).Click();
             driver.FindElement(element).SendKeys(option);
+            driver.FindElement(element).SendKeys(Keys.Enter);
             Console.WriteLine("Option selected: " + option);
 
             return this;
