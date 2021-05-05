@@ -1,4 +1,4 @@
-Project Name: Sauce Demo
++++ Project Name: Sauce Demo +++
 
 URL: https://www.saucedemo.com/
 
@@ -69,7 +69,8 @@ Step #3: Click the option that says "Download Zip file"
 Step #4: UnZip the Zip file named in the previous step. 
 	Expected: a set of folders and files will be unzipped into a folder with 13 files.
 	
-Step #5: Search for the file named "SauceDemo.sln" in the root folder of the unzipped folder and Open it (double click or press enter). With that file you can open the solution of the project which contains the classes, methods and also the test scenarios to run.
+Step #5: Search for the file named "SauceDemo.sln" in the root folder of the unzipped folder and Open it (double click or press enter). 
+With that file you can open the solution of the project which contains the classes, methods and also the test scenarios to run.
 	Expected: The Visual Studio application will open and with it the 2 projects containing the classes, methods and also the test scenarios.
 	
 	The two projects will be displayed in the Solution Explorer section as follows:
@@ -80,7 +81,8 @@ Step #6: Press Ctrl + Shift + B or navigate to the "build" option in the menu ba
 	Expected: After completion you should get the following message: Build: 2 succeeded.
 	
 Step #7: Navigate to the "Test" option in the menu bar and select "Test Explorer" to open the test scenarios.
-	Expected: The dropdown "TestingSauce" will be appeared and with it another option named the same, until you get to the option "UnitTest" which displays the 7 test scenarios that are contained in the project.
+	Expected: The dropdown "TestingSauce" will be appeared and with it another option named the same, until you get to the option "UnitTest" 
+	which displays the 7 test scenarios that are contained in the project.
 
 --------------------------------------------
 
@@ -88,7 +90,8 @@ How-to: Execute the test scenarios
 After you build the solution and the two projects appear with no issues whatso ever follow these steps.
 
 Open the Test explorer and click the dropdowns to get to the test cases.
-	Expected: The test cases are displayed. You can click one by one and run them or you can click the first green triangle like button and that will run them all or just press ctrl + R to execute all the scenarios.
+	Expected: The test cases are displayed. You can click one by one and run them or you can click the first green triangle like button and that 
+	will run them all or just press ctrl + R to execute all the scenarios.
 	
 The Total Duration of te test scenarios is aproximately : 15 seconds 
 
