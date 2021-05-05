@@ -16,6 +16,7 @@ Language: C#
 
 The Chrome Web Driver location:
 C:\Chromedriver\
+https://chromedriver.storage.googleapis.com/index.html?path=89.0.4389.23/
 
 Nuget Packages required:
 ------------------------
