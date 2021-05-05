@@ -1,10 +1,9 @@
-+++ Project Name: Sauce Demo +++
+Project Name: Sauce Demo
 
 URL: https://www.saucedemo.com/
 
 #Purpose of the Project:
-The purpose of the project is test the page saucedemo.com and obtain test scenarios so the company has the best quality page possible. 
-The QAs responsability on the project is to create test cases/test scenarios for the site and develope the test scripts in the following language C#.
+The purpose of the project is test the page saucedemo.com and obtain test scenarios so the company has the best quality page possible. The QAs responsability on the project is to create test cases/test scenarios for the site and develope the test scripts in the following language C#.
 
 #Pre-requisites for installation:
 
@@ -52,7 +51,7 @@ Selenium.WebDriver.ChromeDriver v90.0.443
 7. Complete a purchase
 	Expected: Validate the user navigates to the order confirmation page.
 
-----------------------------------------------
+---------------------------------------------------------------
 
 How-to: Install the solution
 Step #1: go to the following url: https://github.com/echarly/SauceDemo
@@ -84,17 +83,49 @@ Step #7: Navigate to the "Test" option in the menu bar and select "Test Explorer
 	Expected: The dropdown "TestingSauce" will be appeared and with it another option named the same, until you get to the option "UnitTest" 
 	which displays the 7 test scenarios that are contained in the project.
 
---------------------------------------------
+---------------------------------------------------------------
 
 How-to: Execute the test scenarios
 After you build the solution and the two projects appear with no issues whatso ever follow these steps.
 
 Open the Test explorer and click the dropdowns to get to the test cases.
 	Expected: The test cases are displayed. You can click one by one and run them or you can click the first green triangle like button and that 
-	will run them all or just press ctrl + R to execute all the scenarios.
+	will run them all or just press ctrl + R,J to execute all the scenarios.
 	
 The Total Duration of te test scenarios is aproximately : 15 seconds 
 
-For any questions or comments please email: charlyh@gmail.com
+---------------------------------------------------------------
+How-to: The two projects
+
+SauceDemo
+The solution is divided into two projects which are: SauceDemo and TestingSauce.
+
+The difference between them is very simple: 
+ - SauceDemo contains the classes of each page
+ - TestingSauce contains the test scenarios
+ 
+ SauceDemo is comprised as follows:
+ 
+ - Helpers folder
+	* Contains a UserInformation class which has two methods with information for the tests. 
+		Valid user information
+		Invalid user information
+		
+ - PageObjects folder
+	* Contains two classes which are: LoginPage and HomePage.
+	* The LoginPage contains locators and methods to interact with the Login Page.
+	
+ - BasePage.cs file
+	* Contains the webdriver object that will be used in all of the pages and tests.
+	* Also contains the URL for the page and the methods that will be used in the classes created. In this case the classes that use the 
+	methods contained in the BasePage are LoginPage and HomePage.
+	* Methods like for example:
+		+ Click
+		+ WaitTime
+		+ ObtainText 
+		
+---------------------------------------------------------------
+
+For any comments or questions please contact: charlyh@gmail.com
 
 Have fun! 
