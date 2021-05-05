@@ -3,7 +3,8 @@ Project Name: Sauce Demo
 URL: https://www.saucedemo.com/
 
 #Purpose of the Project:
-The purpose of the project is test the page saucedemo.com and obtain test scenarios so the company has the best quality page possible. The QAs responsability on the project is to create test cases/test scenarios for the site and develope the test scripts in the following language C#.
+The purpose of the project is test the page saucedemo.com and obtain test scenarios so the company has the best quality page possible. 
+The QAs responsability on the project is to create test cases/test scenarios for the site and develope the test scripts in the following language C#.
 
 #Pre-requisites for installation:
 
